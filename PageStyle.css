@@ -1,0 +1,56 @@
+html{
+	font-family: Arial;
+}
+
+body{
+	text-align: center;
+}
+
+#login{
+	width: 85%;
+	padding: 20px;
+	margin: 5px;
+	background-color: #ffe6cc;
+	min-height: 550px;
+	opacity: 0.8;
+	border-radius: 2%;
+}
+
+img.avatar{
+	width: 30%;
+	border-radius: 10%
+}
+
+#Signup{
+	width: 85%;
+	padding: 20px;
+	margin: 5px;
+	background-color: #ffe6cc;
+	min-height: 400px;
+	opacity: 0.8;
+	border-radius: 2%;
+}
+
+#container{
+	width: 100%;
+	height: 47.5px;
+	background-color: #CCE5FF;
+}
+
+#CustomerDetails{
+	background-color: #FFCCFF; 
+	height: 700px; 
+	width: 350px;
+}
+
+#CustomerInfo{
+	background-color: #FFE5CC; 
+	height: 700px; 
+	width: 600px;
+}
+
+#CustomerTodoList{
+	background-color: #E5FFCC;
+	height: 700px;
+	width: 350px;
+}

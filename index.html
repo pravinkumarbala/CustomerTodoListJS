@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Project</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="PageStyle.css">
+	
+</head>
+
+<body background="LoginBackground.jpg">
+	<div class="row">
+		<div class="col-xl-offset-8 col-lg-offset-8 col-md-offset-8 col-xl-4 col-lg-4 col-md-4">
+			<br><br><br><br>
+			<form method="POST" id="login">
+				<h3>Login</h3><br>
+				<div class="imgcontainer">
+					<img src="Unknown.png" alt="Avatar" class="avatar">
+				</div><br>
+				<div class="input-group col-md-offset-1 col-md-10">
+					<div class="input-group-addon">
+						<span>@</span>
+					</div>
+					<input type="text" name="emailAddress" id="emailAddress" placeholder="Email Address" class="form-control">
+				</div><br>
+				<div class="input-group col-md-offset-1 col-md-10">
+					<div class="input-group-addon">
+						<span class="glyphicon glyphicon-lock"></span>
+					</div>
+					<input type="password" name="password" id="password" placeholder="Password" class="form-control">
+				</div><br>
+				<button type="button" class="btn btn-success" onclick="login()"><span class="glyphicon glyphicon-log-in"></span> Login</button><hr>
+				<button type="button" class="btn btn-danger">Log with Google</button>
+				<button type="button" class="btn btn-primary">Log with Facebook</button><hr>
+				Are you new?
+				<a href="Register.html">
+					<button type="button" class="btn btn-info">Signup</button>
+				</a>
+			</form>
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="bootstrap/js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="CustomerInformation.js"></script>
+</body>
+</html>

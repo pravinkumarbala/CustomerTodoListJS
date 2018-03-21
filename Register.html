@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Project</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="PageStyle.css">
+</head>
+<script type="text/javascript">
+	
+</script>
+<body background="LoginBackground.jpg">
+	<h3>Register Page</h3><hr>
+	<div class="col-lg-offset-3 col-lg-6">
+		<form method="POST" id="Signup">
+			<div class="input-group">
+				<span class="input-group-addon">
+					<span class="glyphicon glyphicon-user"></span>
+				</span>
+				<input type="text" name="userName" id="userName" placeholder="User Name" class="form-control" required>
+			</div><br>
+			<div class="input-group">
+				<span class="input-group-addon">
+					<span><b>@</b></span>
+				</span>
+				<input type="email" name="emailAddress" id="emailAddress" placeholder="Email Address" class="form-control" required>
+			</div><br>
+			<div class="input-group">
+				<span class="input-group-addon">
+					<span class="glyphicon glyphicon-pencil"></span>
+				</span>
+				<input type="password" name="password" id="password" placeholder="Password" class="form-control" required>
+			</div><br>
+			<div class="input-group">
+				<span class="input-group-addon">
+					<span class="glyphicon glyphicon-repeat"></span>
+				</span>
+				<input type="password" name="repassword" id="repassword" placeholder="Re-password" class="form-control" required>
+			</div><br>
+			<div class="input-group">
+				<span class="input-group-addon">
+					<span class="glyphicon glyphicon-calendar"></span>
+				</span>
+				<input type="date" name="dateOfBirth" id="dateOfBirth" placeholder="Date Of Birth" class="form-control" required>
+			</div><br>
+			<button type="button" class="btn btn-info" onclick="registerForm()">Register <span class="glyphicon glyphicon-user"></span></button>
+		</form>
+	</div>	
+	
+	<script type="text/javascript" src="bootstrap/js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="CustomerInformation.js"></script>
+</body>
+</html>

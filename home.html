@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Project</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="PageStyle.css">
+</head>
+<body>
+	<div class="container" id="container">
+		<nav class="navbar navbar-light" style="height: 30px;">
+		<a class="navbar-brand" href="#" style="padding: 10px">
+			<img src="brand.png" width="30" height="30">
+		</a>
+		<div class="nav navbar-nav navbar-right">	
+			<label style="font-size: 20	px; padding-right: 50px" id="UserName"></label>
+			<button type="button" class="btn btn-outline-info btn-lg" onclick="logout()" style="opacity: 0.7">Logout <span class="glyphicon glyphicon-log-out"></span></button>
+		</div>
+	</nav>
+	</div>
+	<div class="row" style="width: 100%">
+		<div class="col-xl-4 col-lg-4 col-md-4" id="CustomerDetails">
+			<h5>Customer Details</h5><hr>
+			<ul id="customerDetails" type="none">
+			</ul>
+		</div>
+		<div class="col-xl-4 col-lg-4 col-md-4" id="CustomerInfo">
+			<h5>Customer Info</h5><hr>
+			<form>
+				<div>
+					
+				</div><br>
+				<div class="form-inline">
+					<input type="text" name="firstName" placeholder="First Name" class="form-control mb-2 mr-sm-2">
+					<input type="text" name="lasttName" placeholder="Last Name" class="form-control mb-2 mr-sm-2">
+				</div><br>
+				<div class="input-group col-md-offset-1 col-md-10">
+					<div class="input-group-addon">
+						<span>@</span>
+					</div>
+					<input type="text" name="emailAddress" placeholder="Email Address" class="form-control">
+				</div><br>
+				<div class="input-group col-md-offset-1 col-md-10">
+					<div class="input-group-addon">
+						<span class="glyphicon glyphicon-earphone"></span>
+					</div>
+					<input type="number" name="phoneNumber" placeholder="Mobile Number" class="form-control">
+				</div><br>
+				<div class="input-group col-md-offset-1 col-md-10">
+					<div class="input-group-addon">
+						<span class="glyphicon glyphicon-tasks"></span>
+					</div>
+					<input type="text" name="address" placeholder="Address" class="form-control">
+				</div><br>
+				<div class="form-inline">
+					<input type="text" name="city" placeholder="City" class="form-control">
+					<input type="number" name="zipcode" placeholder="Zip Code" class="form-control" maxlength="6">
+				</div><br>
+			</form>
+			<div class="form-inline">
+				<input type="button" value="Save" class="btn btn-success">
+				<input type="button" value="Cancel" class="btn btn-primary">
+			</div>
+		</div>
+		<div class="col-xl-4 col-lg-4 col-md-4" id="CustomerTodoList">
+			<h5>ToDo List</h5><hr>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="bootstrap/js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="todolist.js"></script>
+</body>
+</html>
