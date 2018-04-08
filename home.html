@@ -20,44 +20,44 @@
 	<div class="row" style="width: 100%">
 		<div class="col-xl-4 col-lg-4 col-md-4" id="CustomerDetails">
 			<h5>Customer Details</h5><hr>
-			<ul id="customerDetails" type="none">
+			<ul class="form-text" id="customerDetails" type="none">
 			</ul>
 		</div>
 		<div class="col-xl-4 col-lg-4 col-md-4" id="CustomerInfo">
 			<h5>Customer Info</h5><hr>
-			<form>
+			<form method="GET">
 				<div>
 					
 				</div><br>
 				<div class="form-inline">
-					<input type="text" name="firstName" placeholder="First Name" class="form-control mb-2 mr-sm-2">
-					<input type="text" name="lasttName" placeholder="Last Name" class="form-control mb-2 mr-sm-2">
+					<input type="text" name="firstName" id="firstName" placeholder="First Name" class="form-control mb-2 mr-sm-2">
+					<input type="text" name="lasttName" id="lastName" placeholder="Last Name" class="form-control mb-2 mr-sm-2">
 				</div><br>
 				<div class="input-group col-md-offset-1 col-md-10">
 					<div class="input-group-addon">
 						<span>@</span>
 					</div>
-					<input type="text" name="emailAddress" placeholder="Email Address" class="form-control">
+					<input type="email" name="emailAddress" id="emailAddress" placeholder="Email Address" class="form-control">
 				</div><br>
 				<div class="input-group col-md-offset-1 col-md-10">
 					<div class="input-group-addon">
 						<span class="glyphicon glyphicon-earphone"></span>
 					</div>
-					<input type="number" name="phoneNumber" placeholder="Mobile Number" class="form-control">
+					<input type="number" name="mobileNumber" id="mobileNumber" placeholder="Mobile Number" class="form-control">
 				</div><br>
 				<div class="input-group col-md-offset-1 col-md-10">
 					<div class="input-group-addon">
 						<span class="glyphicon glyphicon-tasks"></span>
 					</div>
-					<input type="text" name="address" placeholder="Address" class="form-control">
+					<input type="text" name="address" id="address" placeholder="Address" class="form-control">
 				</div><br>
 				<div class="form-inline">
-					<input type="text" name="city" placeholder="City" class="form-control">
-					<input type="number" name="zipcode" placeholder="Zip Code" class="form-control" maxlength="6">
+					<input type="text" name="city" id="city" placeholder="City" class="form-control">
+					<input type="number" name="zipcode" id="zipcode" placeholder="Zip Code" class="form-control" maxlength="6">
 				</div><br>
 			</form>
 			<div class="form-inline">
-				<input type="button" value="Save" class="btn btn-success">
+				<input type="button" value="Save" class="btn btn-success" onclick="saveCustomerDetails()">
 				<input type="button" value="Cancel" class="btn btn-primary">
 			</div>
 		</div>
