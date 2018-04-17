@@ -25,7 +25,7 @@
 		</div>
 		<div class="col-xl-4 col-lg-4 col-md-4" id="CustomerInfo">
 			<h5>Customer Info</h5><hr>
-			<form method="GET">
+			<form id="inputFields">
 				<div>
 					
 				</div><br>
@@ -57,8 +57,8 @@
 				</div><br>
 			</form>
 			<div class="form-inline">
-				<input type="button" value="Save" class="btn btn-success" onclick="saveCustomerDetails()">
-				<input type="button" value="Cancel" class="btn btn-primary">
+				<input type="button" value="Save" class="btn btn-success" id="saveCustomerDetails">
+				<input type="button" value="Delete" class="btn btn-danger" id="deleteCustomerDetails">
 			</div>
 		</div>
 		<div class="col-xl-4 col-lg-4 col-md-4" id="CustomerTodoList">
@@ -67,6 +67,6 @@
 	</div>
 
 	<script type="text/javascript" src="bootstrap/js/jquery-3.3.1.min.js"></script>
-	<script type="text/javascript" src="todolist.js"></script>
+	<script type="text/javascript" src="customerDetails.js"></script>
 </body>
 </html>

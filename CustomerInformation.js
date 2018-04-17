@@ -2,15 +2,16 @@ function login(){
 	var	userName = document.getElementById("emailAddress").value;
 	var password = document.getElementById("password").value;
 
-	for (var i = 0; i < localStorage.length; i++) {
-		var _getUserDetails = JSON.parse(localStorage.getItem(localStorage.key(i)));
-		if (!userName && !password) {
+	if (!userName && !password) {
 		console.log("Please enter the data in the fields");
-		}
+	} else {
+		for (var i = 0; i < localStorage.length; i++) {
+		var _getUserDetails = JSON.parse(localStorage.getItem(localStorage.key(i)));
 		if (userName == localStorage.getItem("emailAddress") && password == localStorage.getItem("password")) {
-			alert("Correct Username " + this.userName + " password : " + password);
+			alert("Correct Username " + userName + " password : " + password);
 			window.location = "home.html"
 		}
+	}
 	}
 }
 
